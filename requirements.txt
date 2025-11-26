@@ -4,6 +4,6 @@ python-dotenv
 pdfplumber
 pytesseract
 pdf2image
-google-generative-ai
+google-generativeai
 
 # pip install -r requirements.txt
