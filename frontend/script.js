@@ -27,7 +27,7 @@ form.addEventListener('submit', async (e) => {
   formData.append('jd', jd);
 
   try {
-    const res = await fetch('https://resume-analyzer-1-i6yo.onrender.com/api/analyze', {
+    const res = await fetch('https://resume-analyzer-2-wa95.onrender.com/api/analyze', {
       method: 'POST',
       body: formData
     });
