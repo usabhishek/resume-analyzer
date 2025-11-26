@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>AI Powered Resume Analyzer</title>
+</head>
+<body>
+  <section class="header" id="home">
+        <nav>
+            <a href="index.html"><img src="resmue_analyzer_img/home.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Visit Home</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+          <h1>AI powered Resume analyzer</h1>
+          <p>Drop your resume and job description to see the Overall ATS score, Section wise score, Missing keywords and Personalised suggestions. </p>
+          <a href="#hero">Check Now</a>
+    </section>
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <form id="analyzeForm">
+        <div class="field">
+          <label for="resume">Resume File (PDF/DOCX/TXT)</label>
+          <input type="file" id="resume" name="resume" accept=".pdf,.docx,.txt" required>
+        </div>
+
+        <div class="field">
+          <label for="jd">Job Description</label>
+          <textarea id="jd" name="jd" rows="10" placeholder="Paste the job description here..." required></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn">Analyze</button>
+      </form>
+    </div>
+
+    <div id="result" class="hidden">
+      <h2>Results</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Overall ATS Match</h3>
+          <div id="atsScore" class="score">—</div>
+        </div>
+
+        <div class="card">
+          <h3>Section-wise Scores</h3>
+          <ul id="sectionScores"></ul>
+        </div>
+
+        <div class="card">
+          <h3>Missing Keywords</h3>
+          <ul id="missingKeywords"></ul>
+        </div>
+
+        <div class="card">
+          <h3>Suggestions</h3>
+          <ul id="suggestions"></ul>
+        </div>
+      </div>
+
+      <details>
+        <summary>View extracted texts (debug)</summary>
+        <pre id="debugTexts"></pre>
+      </details>
+    </div>
+  </section>
+
+    <section class="footer">
+    <h4>About Us</h4>
+    <p>We are dedicated to helping job seekers optimize their resumes for Applicant Tracking Systems (ATS) and increase their chances of landing their dream jobs. Our tool leverages advanced AI technology to provide instant feedback and tailored suggestions based on the job description you provide.</p>
+    
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <p>Made with <i class="fa fa-heart"></i> by Abhishek kashyap.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
