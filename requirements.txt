@@ -5,5 +5,6 @@ pdfplumber
 pytesseract
 pdf2image
 google-generativeai
+gunicorn
 
 # pip install -r requirements.txt
